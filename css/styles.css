@@ -230,9 +230,9 @@ p {
 /* #region PAGINA ROADMAP */
 
 table {
-    border-collapse:collapse;
-    border: 5px solid rgb(255, 0, 128);
-    border-radius: 15px;
+    border-collapse: separate;
+    border: 8px solid rgb(255, 0, 128);
+    border-radius: 25px;
     font-size: 0.5rem;
     margin-bottom: 30px;
     /* background-color: blueviolet; */
@@ -244,14 +244,21 @@ caption {
 }
 
 th, td {
-    border: 5px solid rgb(255, 0, 128);
+    border-left: 8px solid rgb(255, 0, 128);
+    border-top: 8px solid rgb(255, 0, 128);
     padding: 1rem;
     text-align: justify;
 }
 
 th {
+    border-top: none;
     font-size: 1.2rem;
     font-weight: bold;
+    width: 50vw;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
 }
 
 table ul {
@@ -269,12 +276,32 @@ table ul {
     border-radius: 30px;
     border: 8px solid rgb(238, 0, 147);
 
-    display: flex;
-    justify-items: flex-start;
+    /* Alineado horizontal */
     margin: auto;
+    
 }
 
+form {
+    width: 100%;
+    
+}
+
+fieldset {
+    width: 100%;
+    border-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin: 15px auto;
+}
+
+
+
 input, textarea, select {
+    width: 80%;
     padding: 10px;
     border-radius: 8px;
     color: black;
@@ -286,25 +313,14 @@ input, textarea, select {
 }
  
 textarea {
-    margin: 10px;
-    display: block;
-    width: 100%;
     resize: none;
 }
 
 label {
     display: inline;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-fieldset {
-    width: 100%;
-    border-style: none;
-    display: flex;
-    justify-items: flex-start;
-    align-items: center;
-    margin: 30px;
-}
 
 .contactButton {
     border-radius: 8px;
@@ -313,12 +329,12 @@ fieldset {
     font-size: 0.8rem;
     font-weight: bold;
     padding: 15px 35px;
-    margin-right: 40px;
+    margin-bottom: 15px;
 }
 
 .botones-form {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
 
 /* #endregion PAGINA CONTACT */
@@ -331,9 +347,19 @@ fieldset {
         font-size: 18px;
     }
 
-    /* .grid-container {    
+      .grid-container-generic {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 20vh 130vh 20vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    .grid-container {    
         grid-template-rows: 20vh 25vh 25vh 80vh 20vh;
-    } */
+    }
   
 }
 
@@ -345,7 +371,7 @@ fieldset {
 
     .grid-container-generic {    
         grid-template-columns: 12vw 76vw 12vw;
-        grid-template-rows: 20vh 130vh 20vh;
+        grid-template-rows: 20vh 140vh 20vh;
         grid-template-areas: 
         ". header ."
         ". section-contenido ."
@@ -364,6 +390,32 @@ fieldset {
         ". footer ."
         ;
     }
+
+    fieldset {
+        width: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .botones-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactButton {
+        margin-right: 30px;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    
 }
 
 /* @media (min-width: 1440px) {
