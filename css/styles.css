@@ -53,6 +53,29 @@ html {
     color: floralwhite;
     padding: 10% 5%;
     text-align: center;
+
+    /* Animacion de Neon */
+    border-radius: 25px;
+    animation-name: neon;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1;
+    
+}
+
+@keyframes neon {
+    0% {
+        border: 5px solid turquoise;
+        box-shadow: 0 0 0.25rem turquoise, inset 0 0 0.25rem turquoise;
+    }
+    100% {
+        border: 5px solid turquoise;
+        box-shadow: 0 0 1rem turquoise, inset 0 0 1rem turquoise;
+    }
+    /* 100% {
+        border: 5px solid turquoise;
+    } */
+
 }
 
 .header a, .footer a {
