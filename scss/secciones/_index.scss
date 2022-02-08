@@ -1,0 +1,73 @@
+.grid-container {    
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: 20vh 25vh 25vh 110vh 20vh;
+    grid-template-areas: 
+    "header"
+    "section-portada"
+    "section-galeria"
+    "section-contenido"
+    "footer"
+    ;
+
+    /* grid-column-gap: 15px; */
+    grid-row-gap: 15px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(46, 46, 46);
+}
+
+/* Items Hijos */
+.section-portada {
+    grid-area: section-portada;
+    background-color: #d32e7a;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.section-galeria {
+    grid-area: section-galeria;
+    background-color: rgb(61, 181, 236);
+    color: floralwhite;
+    font-weight: bold;
+    color: floralwhite;
+
+    /* Centrado horizontal y vertical de elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 2s;
+
+    &:hover {
+        color: rgb(163, 54, 185);
+    }
+}
+
+.zombie-animacion {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+
+    animation-name: zombieCaminando;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 12s;
+    animation-delay: 0;
+}
+
+@keyframes zombieCaminando {
+    0% {
+        left: -10vw;
+    }
+    100% {
+        left: 100vw;
+        display: none;
+    }
+}
+
+

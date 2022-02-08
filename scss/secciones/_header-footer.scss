@@ -1,0 +1,66 @@
+
+.header {
+    grid-area: header;
+    background-color: black;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        align-items: center;  
+        justify-content: space-evenly; 
+    }
+
+    a {
+        font-size: 1rem;
+        /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(56, 240, 169);
+        transition: all 1s;    
+
+        &:hover {
+            color: rgb(99, 76, 184);
+            font-size: 1.2rem;  
+        }
+    }
+}
+
+.logo {
+    width: 8vw;
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+    color: floralwhite;
+
+    ul {
+        width: 100%;
+        height: 50%;
+        list-style-type: none;
+        display: flex;
+        align-items: flex-end;  
+        justify-content: space-evenly; 
+    }
+
+    a {
+        font-size: 1rem;
+        /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(56, 240, 169);
+        transition: all 1s;    
+
+        &:hover {
+            color: rgb(99, 76, 184);
+            font-size: 1.2rem;  
+        }
+    }
+}

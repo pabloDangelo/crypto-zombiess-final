@@ -1,0 +1,116 @@
+/* Tablets */
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+      .grid-container-generic {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 20vh 130vh 20vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    .grid-container {    
+        grid-template-rows: 20vh 25vh 25vh 80vh 20vh;
+    }
+  
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    html {
+        font-size: 22px;
+    }
+
+    .grid-container-generic {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 20vh 140vh 20vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    .grid-container {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 20vh 25vh 25vh 80vh 20vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-portada ."
+        ". section-galeria ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    fieldset {
+        width: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .botones-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactButton {
+        margin-right: 30px;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    
+}
+
+/* @media (min-width: 1440px) {
+   
+
+} */
+
+/* Agregado porque al llegar a esta medida se veia con las fuentes de mobile (CONSUTAR) */
+@media (min-width: 2000px) {
+    html {
+        font-size: 34px;
+    }
+
+    .grid-container-generic {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 34vh 170vh 34vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    .grid-container {    
+        grid-template-columns: 12vw 76vw 12vw;
+        grid-template-rows: 34vh 34vh 34vh 100vh 34vh;
+        grid-template-areas: 
+        ". header ."
+        ". section-portada ."
+        ". section-galeria ."
+        ". section-contenido ."
+        ". footer ."
+        ;
+    }
+
+    .zombie-animacion {
+        width: 28vh;
+        height: 28vh;
+    }
+
+}

@@ -1,0 +1,66 @@
+.contactBox {
+    width: 90%;
+    background-color: blueviolet;
+    border-radius: 30px;
+    border: 8px solid rgb(238, 0, 147);
+
+    /* Alineado horizontal */
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    
+}
+
+fieldset {
+    width: 100%;
+    border-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin: 15px auto;
+}
+
+
+
+input, textarea, select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.check-news {
+    transform: scale(2.2);
+}
+ 
+textarea {
+    resize: none;
+}
+
+label {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+
+.contactButton {
+    border-radius: 8px;
+    background-color: rgb(22, 131, 255);
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 15px 35px;
+    margin-bottom: 15px;
+}
+
+.botones-form {
+    display: flex;
+    flex-direction: column;
+}
+

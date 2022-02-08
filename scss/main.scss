@@ -1,0 +1,57 @@
+/* RESETEO DE ESTILOS */
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+} 
+
+//PRIMERO VAN LAS VARIABLES 
+@import './variables/tamanios';
+// @import './variables/colores';
+// @import './variables/extend';
+// @import './variables/mixins';
+// @import './variables/maps';
+
+
+//SECCIONES
+@import './secciones/shared';
+@import './secciones/index';
+@import './secciones/header-footer';
+@import './secciones/contact';
+@import './secciones/roadmap';
+@import './secciones/media-queries';
+
+
+
+
+
+
+
+/* section, header, footer {
+    border-radius: 20px;
+} */
+
+/* .zombieFooter {
+    width: 23%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+
+/* 
+.imagenPortada {
+    border: 1px solid salmon;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+} */
+
+/* #endregion ESTILOS GENERALES */
+
+
+
+
+/* section, body {
+    background-color: black !important;
+} */
