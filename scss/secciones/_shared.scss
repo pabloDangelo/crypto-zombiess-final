@@ -119,7 +119,8 @@ p {
 .zombieFooter {
     width: 21vw;
     position: fixed;
-    bottom: 0;
+    bottom: 85px;
     right: 0;
+    transform: rotate(-90deg);
 } 
 

@@ -48,19 +48,22 @@
         display: flex;
         align-items: flex-end;  
         justify-content: space-evenly; 
-    }
 
-    a {
-        font-size: 1rem;
-        /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(56, 240, 169);
-        transition: all 1s;    
-
-        &:hover {
-            color: rgb(99, 76, 184);
-            font-size: 1.2rem;  
+        a {
+            font-size: 1rem;
+            /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(56, 240, 169);
+            transition: all 1s;    
+    
+            &:hover {
+                color: rgb(99, 76, 184);
+                font-size: 1.2rem;  
+            }
         }
+
     }
+
+    
 }

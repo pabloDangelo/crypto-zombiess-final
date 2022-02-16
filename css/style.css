@@ -70,8 +70,9 @@ p {
 .zombieFooter {
   width: 21vw;
   position: fixed;
-  bottom: 0;
-  right: 0; }
+  bottom: 85px;
+  right: 0;
+  transform: rotate(-90deg); }
 
 .grid-container {
   display: grid;
@@ -165,16 +166,16 @@ p {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly; }
-  .footer a {
-    font-size: 1rem;
-    /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
-    text-decoration: none;
-    font-weight: bold;
-    color: #38f0a9;
-    transition: all 1s; }
-    .footer a:hover {
-      color: #634cb8;
-      font-size: 1.2rem; }
+    .footer ul a {
+      font-size: 1rem;
+      /* font-size: 3vw; OPCION ULTRA RESPONSIVE (CONSULTAR)*/
+      text-decoration: none;
+      font-weight: bold;
+      color: #38f0a9;
+      transition: all 1s; }
+      .footer ul a:hover {
+        color: #634cb8;
+        font-size: 1.2rem; }
 
 .contactBox {
   width: 90%;
@@ -319,9 +320,9 @@ th {
     width: 25vh;
     margin: 30px; } }
 
-/* section, header, footer {
-    border-radius: 20px;
-} */
+section, header, footer {
+  border-radius: 20px; }
+
 /* #endregion ESTILOS GENERALES */
 /* section, body {
     background-color: black !important;
