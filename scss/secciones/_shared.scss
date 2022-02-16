@@ -44,11 +44,11 @@ p {
     border: 5px solid #8bbef3;
     
     /* Animacion de Neon */
-    animation-name: neon;
-    animation-duration: 0.08s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate
+    // animation-name: neon;
+    // animation-duration: 0.08s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate
 
     h1 {
         color: #c6e2ff;
@@ -115,3 +115,11 @@ p {
         margin: 20px;
     }
 }
+
+.zombieFooter {
+    width: 21vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} 
+

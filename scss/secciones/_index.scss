@@ -1,7 +1,7 @@
 .grid-container {    
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 20vh 25vh 25vh 110vh 20vh;
+    grid-template-rows: 20vh 20vh auto 60vh 20vh;
     grid-template-areas: 
     "header"
     "section-portada"
@@ -31,20 +31,28 @@
 .section-galeria {
     grid-area: section-galeria;
     background-color: rgb(61, 181, 236);
-    color: floralwhite;
-    font-weight: bold;
-    color: floralwhite;
 
-    /* Centrado horizontal y vertical de elementos */
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     align-items: center;
+    justify-content: center;
 
-    transition: all 2s;
+    img {
+        border-radius: 20px;
+        border: 4px solid blueviolet;
+        width: 16vh;
+        margin: 20px;
+        transition: all 1s;    
 
-    &:hover {
-        color: rgb(163, 54, 185);
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+        }
+
     }
+
 }
 
 .zombie-animacion {
@@ -71,3 +79,10 @@
 }
 
 
+
+
+
+  
+  
+  
+  

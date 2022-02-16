@@ -36,19 +36,15 @@ p {
   text-align: center;
   border-radius: 25px;
   border: 5px solid #8bbef3;
-  /* Animacion de Neon */
-  animation-name: neon;
-  animation-duration: 0.08s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate h1;
-    animation-direction-color: #c6e2ff;
-  /* Animacion de Neon */
-    animation-direction-animation-name: neon-text;
-    animation-direction-animation-duration: 0.08s;
-    animation-direction-animation-timing-function: ease-in-out;
-    animation-direction-animation-iteration-count: infinite;
-    animation-direction-animation-direction: alternate; }
+  /* Animacion de Neon */ }
+  .section-contenido h1 {
+    color: #c6e2ff;
+    /* Animacion de Neon */
+    animation-name: neon-text;
+    animation-duration: 0.08s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
 
 @keyframes neon-text {
   from {
@@ -71,10 +67,16 @@ p {
   .social-media i {
     margin: 20px; }
 
+.zombieFooter {
+  width: 21vw;
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 20vh 25vh 25vh 110vh 20vh;
+  grid-template-rows: 20vh 20vh auto 60vh 20vh;
   grid-template-areas: "header" "section-portada" "section-galeria" "section-contenido" "footer";
   /* grid-column-gap: 15px; */
   grid-row-gap: 15px;
@@ -93,16 +95,19 @@ p {
 .section-galeria {
   grid-area: section-galeria;
   background-color: #3db5ec;
-  color: floralwhite;
-  font-weight: bold;
-  color: floralwhite;
-  /* Centrado horizontal y vertical de elementos */
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  transition: all 2s; }
-  .section-galeria:hover {
-    color: #a336b9; }
+  justify-content: center; }
+  .section-galeria img {
+    border-radius: 20px;
+    border: 4px solid blueviolet;
+    width: 16vh;
+    margin: 20px;
+    transition: all 1s; }
+    .section-galeria img:hover {
+      transform: scale(1.2, 1.2); }
 
 .zombie-animacion {
   width: 20vh;
@@ -255,10 +260,10 @@ th {
     font-size: 18px; }
   .grid-container-generic {
     grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 20vh 130vh 20vh;
+    grid-template-rows: 20vh 120vh 20vh;
     grid-template-areas: ". header ." ". section-contenido ." ". footer ."; }
   .grid-container {
-    grid-template-rows: 20vh 25vh 25vh 80vh 20vh; } }
+    grid-template-rows: 20vh 20vh auto 80vh 20vh; } }
 
 /* Desktop */
 @media (min-width: 1024px) {
@@ -266,11 +271,11 @@ th {
     font-size: 22px; }
   .grid-container-generic {
     grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 20vh 140vh 20vh;
+    grid-template-rows: 20vh 130vh 20vh;
     grid-template-areas: ". header ." ". section-contenido ." ". footer ."; }
   .grid-container {
     grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 20vh 25vh 25vh 80vh 20vh;
+    grid-template-rows: 20vh 20vh auto 80vh 20vh;
     grid-template-areas: ". header ." ". section-portada ." ". section-galeria ." ". section-contenido ." ". footer ."; }
   fieldset {
     width: 90%;
@@ -286,7 +291,10 @@ th {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0; } }
+    margin: 0; }
+  .section-galeria img {
+    width: 20vh;
+    margin: 25px; } }
 
 /* @media (min-width: 1440px) {
    
@@ -295,35 +303,24 @@ th {
 /* Agregado porque al llegar a esta medida se veia con las fuentes de mobile (CONSUTAR) */
 @media (min-width: 2000px) {
   html {
-    font-size: 34px; }
+    font-size: 38px; }
   .grid-container-generic {
     grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 34vh 170vh 34vh;
+    grid-template-rows: 30vh 120vh 30vh;
     grid-template-areas: ". header ." ". section-contenido ." ". footer ."; }
   .grid-container {
     grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 34vh 34vh 34vh 100vh 34vh;
+    grid-template-rows: 34vh 34vh auto 100vh 34vh;
     grid-template-areas: ". header ." ". section-portada ." ". section-galeria ." ". section-contenido ." ". footer ."; }
   .zombie-animacion {
     width: 28vh;
-    height: 28vh; } }
+    height: 28vh; }
+  .section-galeria img {
+    width: 25vh;
+    margin: 30px; } }
 
 /* section, header, footer {
     border-radius: 20px;
-} */
-/* .zombieFooter {
-    width: 23%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-} */
-/* 
-.imagenPortada {
-    border: 1px solid salmon;
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    margin: 40px 0;
 } */
 /* #endregion ESTILOS GENERALES */
 /* section, body {
