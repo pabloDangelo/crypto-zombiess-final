@@ -15,16 +15,10 @@
 @import './secciones/header-footer';
 @import './secciones/contact';
 @import './secciones/roadmap';
+@import './secciones/faq';
 @import './secciones/media-queries';
 
 
 section, header, footer {
     border-radius: 20px;
 } 
-
-
-/* #endregion ESTILOS GENERALES */
-
-/* section, body {
-    background-color: black !important;
-} */
