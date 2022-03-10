@@ -1,5 +1,6 @@
 .contactBox {
     width: 90%;
+    height: 90%;
     background-color: blueviolet;
     border-radius: 30px;
     border: 8px solid rgb(238, 0, 147);
@@ -10,11 +11,12 @@
 
 form {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; //Alineado a la izq 
-    align-items: center; //Centrado en y
-    row-gap: 10px;
+    justify-content: space-around; //Alineado en Y
+    align-items: center; //Centrado en X
+    row-gap: 2%;
 
     padding: 15px;
 }
@@ -24,15 +26,15 @@ fieldset {
     border-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; //Alineado a la izq 
-    align-items: center; //Centrado en y
+    justify-content: flex-start; //Alineado en Y 
+    align-items: center; //Centrado en X
    
     margin: 5px auto;
 }
 
 input, textarea, select {
     width: 100%;
-    height: 50px;
+    height: 5%;
     padding: 10px;
     border-radius: 10px;
     color: black;
@@ -65,13 +67,13 @@ label {
     color: rgb(255, 255, 255);
     font-size: 0.8rem;
     font-weight: bold;
-    padding: 15px 35px;
+    padding: 2% 35px;
     margin-bottom: 15px;
 }
 
 .botones-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5%;
 }
 
