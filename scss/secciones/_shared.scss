@@ -21,7 +21,7 @@ p {
 .grid-container-generic {    
     display: grid;
     grid-template-columns: 100vw; 
-    grid-template-rows: 20vh 100vh 20vh;
+    grid-template-rows: 20vh 120vh 20vh;
     grid-template-areas: 
     "header"
     "section-contenido"
@@ -41,7 +41,7 @@ p {
     background-color: rgb(31, 194, 44);
     color: floralwhite;
     font-weight: bold;
-    padding: 10% 5%;
+    padding: 5%;
     text-align: center;
 
     border-radius: 25px;
@@ -64,6 +64,7 @@ p {
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
+
 }
 
 @keyframes neon-text{

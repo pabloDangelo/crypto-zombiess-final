@@ -1,11 +1,15 @@
 
+.roadmap-h1 {
+    height: 5%;
+    margin: 0;
+}
+
 table {
     height: 80%;
     border-collapse: separate;
     border: 8px solid rgb(255, 0, 128);
     border-radius: 25px;
     font-size: 0.5rem;
-    margin-bottom: 30px;
 
     ul {
         padding-left: 30px;
